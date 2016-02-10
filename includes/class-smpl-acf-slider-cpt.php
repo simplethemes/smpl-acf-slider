@@ -42,7 +42,7 @@ $slides->populate_column('id', function($column, $post) {
 
 // Add the ACF Fields
 if ( ! class_exists( 'acf_pro' ) ) {
-    require_once get_template_directory().'/inc/acf/acf.php';
+    include_once get_template_directory().'/inc/acf/acf.php';
 }
 
 if( function_exists('acf_add_local_field_group') ):
