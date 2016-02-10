@@ -16,7 +16,7 @@
 Plugin Name:       ACF Slider
 Plugin URI:        https://github.com/simplethemes/smpl-acf-slider
 Description:       Regsiters a 'slider' Custom Post Type and outputs a Slick slider in supported WordPress themes. Requires ACF Pro.
-Version:           1.0.0
+Version:           1.0.1
 Author:            Simple Themes
 Author URI:        https://www.simplethemes.com
 License:           GPL-2.0+
