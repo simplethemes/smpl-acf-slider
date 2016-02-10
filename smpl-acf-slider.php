@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The plugin bootstrap file
  *
@@ -13,17 +12,21 @@
  * @package           Smpl_Acf_Slider
  *
  * @wordpress-plugin
- * Plugin Name:       ACF Slider
- * Plugin URI:        https://www.simplethemes.com
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
- * Author:            Casey Lee
- * Author URI:        https://www.simplethemes.com
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       smpl-acf-slider
- * Domain Path:       /languages
- */
+
+Plugin Name:       ACF Slider
+Plugin URI:        https://github.com/simplethemes/smpl-acf-slider
+Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+Version:           1.0.0
+Author:            Simple Themes
+Author URI:        https://www.simplethemes.com
+License:           GPL-2.0+
+License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+Text Domain:       smpl-acf-slider
+Domain Path:       /languages
+GitHub Plugin URI: https://github.com/simplethemes/smpl-acf-slider
+GitHub Branch:     master
+
+*/
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
