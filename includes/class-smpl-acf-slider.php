@@ -100,7 +100,9 @@ class Smpl_Acf_Slider {
 		/**
 		 * Define the Slider custom post type
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'lib/CPT.php';
+		if (!class_exists(CPT)) {
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'lib/CPT.php';
+		}
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-smpl-acf-slider-cpt.php';
 
 		/**
