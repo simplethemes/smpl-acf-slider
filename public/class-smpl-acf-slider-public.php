@@ -115,8 +115,12 @@ class Smpl_Acf_Slider_Public {
         $slick['fade']             = false;
 
         $features = get_field('slider_enable_features', $id);
-        foreach ($features as $feature => $value) {
-            $slick[$value] = true;
+        if (is_array($features)) {
+            foreach ($features as $feature => $value) {
+                $slick[$value] = true;
+            }
+        } else {
+            $features = array();
         }
         $slick = apply_filters( 'slick_options', $slick );
 
@@ -155,6 +159,13 @@ class Smpl_Acf_Slider_Public {
 
                 $slider_query->the_post();
                 $features         = get_field('slider_enable_features');
+                if (is_array($features)) {
+                    foreach ($features as $feature => $value) {
+                        $slick[$value] = true;
+                    }
+                } else {
+                    $features = array();
+                }
 
                 $slider_arrows    = (in_array('arrows',$features)) ? 'has-arrows' : false;
                 $slider_container = get_field('slider_container');
